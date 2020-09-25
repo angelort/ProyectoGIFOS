@@ -4,36 +4,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/stylesheets/dist/styles.min.css">
+    <link rel="stylesheet" type="text/css" href="./stylesheets/dist/styles.min.css">
     <title>gifOS</title>
 </head>
 
 <body>
-
+    <!-- Barra de navegación con Logo y Menú -->
     <nav>
-        <img src="/img/logo-mobile.svg" alt="Logo mobile" class="logo-mobile" id="logo-mobile">
-        <img src="/img/burger.svg" alt="Burger menu" class="menu-burger" id="menu-burger">
+        <img src="./img/logo-mobile.svg" alt="Logo mobile" class="logo-mobile" id="logo-mobile">
+        <img src="./img/burger.svg" alt="Burger menu" class="menu-burger" id="menu-burger">
         <ul>
             <li>Modo nocturno</li>
             <li>Favoritos</li>
             <li>Mis GIFOS</li>
         </ul>
     </nav>
+    <!-- Header con imagen, barra de búsqueda y trending list -->
     <header>
+        <h1>
+            Inspírate, busca, guarda, y crea los mejores <span>GIFOS</span>
+        </h1>
+        <img src="./img/ilustra_header.svg" alt="Ilustración Header" class="ilustra_header" id="ilustra_header">
+        <div id="input-container">
+            <input autocomplete="off" type="search" name="search-box" class="search-box" id="search-box" placeholder="Busca GIFOS y más" required />
 
+            <button class="search-btn " id="search-btn "></button>
+
+            <hr id="search-margin " />
+
+            <ul id="suggestions ">
+                <li class="suggestion ">
+                    <div class="suggestion-text "></div>
+                </li>
+
+                <li class="suggestion ">
+                    <div class="suggestion-text "></div>
+                </li>
+
+                <li class="suggestion ">
+                    <div class="suggestion-text "></div>
+                </li>
+
+                <li class="suggestion ">
+                    <div class="suggestion-text "></div>
+                </li>
+            </ul>
+        </div>
+        <section class="trending-list">
+            <h3>Trending:</h3>
+            <p id="trending-text" class="colored-text"></p>
+        </section>
     </header>
-    <main>
-        <article>
-            <!-- Article -->
-        </article>
-        <aside>
-            <!-- Aside -->
-        </aside>
-    </main>
+
+
     <footer>
-        <!-- Footer -->
+        <p>
+            Compartir en:
+        </p>
+        <div id="icons">
+            <a id="facebook" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"></a>
+
+            <a id="twitter" href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer"></a>
+
+            <a id="instagram" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"></a>
+        </div>
+        </div>
+
+        <div>
+            <p>&copy; GIFOS 2020 All Rights Reserved.</p>
+        </div>
     </footer>
-    <script src="/scripts/script.js">
+    <script src="/scripts/script.js ">
     </script>
 </body>
 
