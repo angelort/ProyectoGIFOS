@@ -3,13 +3,14 @@
 @import "vendors/_normalize.scss";
 body {
     font-size: 16px;
-}
-
-hr {
-    background-color: #572EE5;
-    width: 100%;
-    height: 5px;
-    position: fixed;
+    hr {
+        background-color: #572EE5;
+        width: 100%;
+        height: 5px;
+        position: sticky;
+        margin: 0;
+        z-index: 1;
+    }
 }
 
 @import "layout/nav";
