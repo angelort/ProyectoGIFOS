@@ -10,6 +10,7 @@
 
 <body>
     <!-- Barra de navegación con Logo y Menú -->
+    <hr>
     <nav>
         <img src="./img/logo-mobile.svg" alt="Logo mobile" class="logo-mobile" id="logo-mobile">
         <img src="./img/burger.svg" alt="Burger menu" class="menu-burger" id="menu-burger">
@@ -27,24 +28,18 @@
         <img src="./img/ilustra_header.svg" alt="Ilustración Header" class="ilustra_header" id="ilustra_header">
         <div id="input-container">
             <input autocomplete="off" type="search" name="search-box" class="search-box" id="search-box" placeholder="Busca GIFOS y más" required />
-
             <button class="search-btn " id="search-btn "></button>
-
             <hr id="search-margin " />
-
             <ul id="suggestions ">
                 <li class="suggestion ">
                     <div class="suggestion-text "></div>
                 </li>
-
                 <li class="suggestion ">
                     <div class="suggestion-text "></div>
                 </li>
-
                 <li class="suggestion ">
                     <div class="suggestion-text "></div>
                 </li>
-
                 <li class="suggestion ">
                     <div class="suggestion-text "></div>
                 </li>
@@ -55,8 +50,28 @@
             <p id="trending-text" class="colored-text"></p>
         </section>
     </header>
-
-
+    <main>
+        <section class="favorites">
+            <img src="./img/icon-favoritos.svg" alt="Favoritos">
+            <h2 class="section-title">
+                Favoritos
+            </h2>
+        </section>
+        <section class="mygifos">
+            <img src="./img/icon-mis-gifos.svg" alt="Mis GIFOS">
+            <h2 class="section-title">
+                Mis GIFOS
+            </h2>
+        </section>
+        <section class="trending">
+            <h2 class="section-title">
+                Trending GIFOS
+            </h2>
+            <p>
+                Mira los últimos GIFOS de nuestra comunidad.
+            </p>
+        </section>
+    </main>
     <footer>
         <p>
             Compartir en:
@@ -68,8 +83,6 @@
 
             <a id="instagram" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"></a>
         </div>
-        </div>
-
         <div>
             <p>&copy; GIFOS 2020 All Rights Reserved.</p>
         </div>
