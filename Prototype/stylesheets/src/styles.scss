@@ -1,16 +1,21 @@
 @charset "UTF-8";
 @import "vendors/_resetcss.scss";
 @import "vendors/_normalize.scss";
+@import"abstracts/variables";
 body {
     font-size: 16px;
+    font-family: $font-montserrat;
+    color:$primary-color;
     hr {
-        background-color: #572EE5;
+        background-color: $primary-color;
         width: 100%;
         height: 5px;
         position: sticky;
         margin: 0;
         z-index: 1;
+        border: 0;
     }
 }
 
 @import "layout/nav";
+@import "layout/header";

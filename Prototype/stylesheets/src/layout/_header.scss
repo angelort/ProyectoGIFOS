@@ -1,3 +1,52 @@
-// -----------------------------------------------------------------------------
-// This file contains all styles related to the header of the site/application.
-// -----------------------------------------------------------------------------
+header {
+    h1 {
+        margin: 0;
+        width: 286px;
+        height: 99px;
+        padding-left: 12%;
+        padding-right: 11.7%;
+        padding-bottom: 31px;
+        text-align: center;
+        font-size: 25px;
+        line-height: 33px;
+        font-weight: $bold;
+
+        span {
+            color: $secondary-color;
+        }
+    }
+
+    img {
+        width: 273px;
+        height: 130px;
+        display: block;
+        margin: auto;
+    }
+
+    #input-container {
+        border: 1px solid $primary-color;
+        width: 334px;
+        height: 50px;
+        display: block;
+        margin: auto;
+        border-radius: 27px;
+
+        input {
+            display: block;
+            margin: 0 55px;
+            border: 0;
+            height: 50px;
+            font-weight: $regular;
+        }
+
+        button {
+            text-align: right;
+        }
+    }
+
+    .trending-list {
+        padding-top: 31px;
+        font-weight: $bold;
+        text-align: center;
+    }
+}
