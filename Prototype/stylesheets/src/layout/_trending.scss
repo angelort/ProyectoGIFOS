@@ -1,0 +1,17 @@
+.trending{
+    margin: 50px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+    p{
+        font-family: $font-roboto;
+        font-weight: $regular;
+        line-height: 23px;
+        color: $third-color;
+        font-size: 16px;
+        text-align: center;
+        span{
+            display: block;
+        }
+    }
+}
