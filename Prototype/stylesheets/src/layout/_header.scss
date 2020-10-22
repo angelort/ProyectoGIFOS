@@ -12,7 +12,7 @@ header {
         font-weight: $bold;
 
         span {
-            color: $lightbluecolor;
+            color: $secondarycolor;
         }
     }
 
@@ -24,7 +24,7 @@ header {
     }
 
     #input-container {
-        border: 1px solid $bluecolor;
+        border: 1px solid $primarycolor;
         width: 334px;
         height: 50px;
         display: block;
