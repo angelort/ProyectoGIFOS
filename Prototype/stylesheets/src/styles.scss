@@ -17,13 +17,18 @@ body {
         border: 0;
     }
 }
+
+// Componentes de caja de búsqueda
 @import "components/box";
 @import "components/search_box";
+
+// Secciones fijas de layout
 @import "layout/nav";
 @import "layout/header";
 
 // Main incluye secciones Favoritos, Mis GIFOS y Trendings
-@import "layout/main";
+@import "pages/main";
+
 @import "layout/footer";
 
 // Tema Modo Oscuro

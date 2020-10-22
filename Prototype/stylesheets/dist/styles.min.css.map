@@ -10,7 +10,7 @@
         "../src/components/_search_box.scss",
         "../src/layout/_nav.scss",
         "../src/layout/_header.scss",
-        "../src/layout/_main.scss",
+        "../src/pages/_main.scss",
         "../src/layout/_trending.scss",
         "../src/layout/_footer.scss",
         "../src/themes/_dark_theme.scss"
