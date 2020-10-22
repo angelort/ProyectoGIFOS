@@ -20,5 +20,10 @@ body {
 
 @import "layout/nav";
 @import "layout/header";
+
+// Main incluye secciones Favoritos, Mis GIFOS y Trendings
 @import "layout/main";
 @import "layout/footer";
+
+// Tema Modo Oscuro
+@import "themes/dark_theme";
