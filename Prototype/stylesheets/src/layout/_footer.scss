@@ -5,14 +5,18 @@ footer {
     line-height: 20px;
     text-align: center;
     color: $black;
-    
-
     p {
         font-size: 15px;
     }
-
-    div {
+   .copyright {
         font-size: 14px;
         padding-bottom: 23px;
+    }
+    .icons{
+        margin-top: 24px;
+        margin-bottom: 47.8px;
+        display: flex;
+        justify-content: center;
+        column-gap: 6%;
     }
 }
