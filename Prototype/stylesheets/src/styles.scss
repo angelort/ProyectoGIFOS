@@ -17,7 +17,8 @@ body {
         border: 0;
     }
 }
-
+@import "components/box";
+@import "components/search_box";
 @import "layout/nav";
 @import "layout/header";
 
