@@ -14,14 +14,25 @@
 <body>
     <!-- Barra de navegación con Logo y Menú -->
     <hr>
-    <nav>
-        <img src="./img/logo-mobile.svg" alt="Logo mobile" class="logo-mobile" id="logo-mobile">
-        <img src="./img/burger.svg" alt="Burger menu" class="menu-burger" id="menu-burger">
-        <ul>
-            <li>Modo nocturno</li>
-            <li>Favoritos</li>
-            <li>Mis GIFOS</li>
-        </ul>
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <img src="./img/logo-mobile.svg" alt="Logo mobile" class="logo-mobile" id="logo-mobile">
+            <input type="checkbox" class="menu-btn" id="menu-btn">
+            <label for="menu-btn" class="menu-icon" data-img="open">
+                <span class="nav-icon"></span>
+            </label>
+            <ul id="menu" class="menu">
+                <li>Modo Nocturno
+                    <hr class="line">
+                </li>
+                <li>Favoritos
+                    <hr class="line">
+                </li>
+                <li>Mis GIFOS
+                    <hr class="line">
+                </li>
+            </ul>
+        </div>
     </nav>
     <!-- Header con imagen, barra de búsqueda y trending list -->
     <header>
