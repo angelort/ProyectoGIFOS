@@ -3,6 +3,14 @@
 @import "vendors/_normalize.scss";
 @import"abstracts/variables";
 body {
+    a{
+        text-decoration: none;
+        color: $white;
+        cursor: pointer;
+      }
+      li{
+          cursor: pointer;
+      }
     font-size: 16px;
     font-family: $font-montserrat;
     font-weight: $bold;
@@ -13,10 +21,13 @@ body {
         height: 5px;
         position: sticky;
         margin: 0;
-        z-index: 1;
+        z-index: 3;
         border: 0;
     }
 }
+
+// Mixin desktop
+@import "abstracts/mixins";
 
 // Componentes de caja de búsqueda
 @import "components/box";
@@ -25,11 +36,12 @@ body {
 // Secciones fijas de layout
 @import "layout/nav";
 @import "layout/header";
+@import "layout/footer";
 
 // Main incluye secciones Favoritos, Mis GIFOS y Trendings
 @import "pages/main";
 
-@import "layout/footer";
+
 
 // Tema Modo Oscuro
-@import "themes/dark_theme";
+@import "themes/dark_theme"
