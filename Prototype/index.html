@@ -17,6 +17,7 @@
     <hr>
     <nav id="navbar" class="navbar">
         <div class="nav-container">
+            <div class="logo-text" id="logo-text">GIFOS</div>
             <img src="./img/logo-mobile.svg" alt="Logo mobile" class="logo-mobile" id="logo-mobile">
             <img src="./img/logo-desktop.svg" alt="Logo desktop" class="logo-desktop" id="logo-desktop">
             <input type="checkbox" class="menu-btn" id="menu-btn">
@@ -35,8 +36,10 @@
                 <li> <a href="#">Mis GIFOS</a>
                     <hr class="line">
                 </li>
-                <li>
-                    <img src="/Prototype/img/button-crear-gifo.svg" alt="Crear Gif" class="create-btn" id="create-btn">
+                <li class="create-gif">
+                    <button class="create-gif-btn">
+                        <div class="plus-sign" id="plus-sign"></div>
+                    </button>
                 </li>
             </ul>
         </div>
@@ -45,14 +48,17 @@
     <header>
         <h1>
             Inspírate, busca,
-            <br> guarda, y crea los
+            <br> guarda, y crea
+            <br>
+            los
             <br> mejores <span>GIFOS</span>
         </h1>
         <img src="./img/ilustra_header.svg" alt="Ilustración Header" class="ilustra_header" id="ilustra_header">
         <div id="input-container">
             <input autocomplete="off" type="search" name="search-box" class="search-box" id="search-box"
                 placeholder="Busca GIFOS y más" required />
-            <button class="search-btn " id="search-btn "></button>
+            <button class="search-btn" id="search-btn"></button>
+            <button class="search-btn-dark" id="search-btn-dark"></button>
             <ul id="suggestions ">
                 <li class="suggestion ">
                     <div class="suggestion-text "></div>
@@ -96,21 +102,19 @@
         </section>
     </main>
     <footer>
-        <p>
-            Compartir en:
-        </p>
+        <div class="footer-flex">
+        <p class="share">
+Compartir en:</p>
         <div id="icons" class="icons">
-            <a id="facebook" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img
-                    src="/Prototype/img/icon_facebook.svg" alt="Facebook"></a>
-            <a id="twitter" href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer"><img
-                    src="/Prototype/img/icon-twitter.svg" alt=""></a>
-            <a id="instagram" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img
-                    src="/Prototype/img/icon_instagram.svg" alt=""></a>
+            <a class="facebook" id="facebook" href="https://www.facebook.com/" target="_blank"
+                rel="noopener noreferrer"></a>
+            <a class="twitter" id="twitter" href="https://www.twitter.com/" target="_blank"
+                rel="noopener noreferrer"></a>
+            <a class="instagram" id="instagram" href="https://www.instagram.com/" target="_blank"
+                rel="noopener noreferrer"></a>
         </div>
-        <div class="copyright">
-            <p>&copy; GIFOS 2020 All Rights Reserved.</p>
-        </div>
-
+    </div>
+        <p class="copyright">&copy; GIFOS 2020 All Rights Reserved.</p>
     </footer>
     <hr>
     <script src="/Prototype/scripts/darkMode.js">

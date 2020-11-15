@@ -3,7 +3,6 @@
     background-color: transparent;
     border: 1px solid $primarycolor;
     border-radius: 100px;
-    padding-left: 50px;
   }
   
   .search-box:focus {
@@ -18,4 +17,14 @@
     position: absolute;
     background: transparent;
     @include icon-bg('/Prototype/img/icon-search.svg');
+  }
+
+  .search-btn-dark {
+    width: 25px;
+    height: 25px;
+    border: none;
+    position: absolute;
+    background: transparent;
+    @include icon-bg('/Prototype/img/icon-search-mod-noc.svg');
+    display: none;
   }

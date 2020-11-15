@@ -1,8 +1,8 @@
 .trending{
-    margin: 50px;
     font-size: 20px;
     text-align: center;
     line-height: 30px;
+    background-color: $trending-bg;
     p{
         font-family: $font-roboto;
         font-weight: $regular;

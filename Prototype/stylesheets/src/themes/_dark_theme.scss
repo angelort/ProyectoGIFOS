@@ -28,18 +28,23 @@
 
   nav {
     background-color: $dark-background;
+    
   }
 
   #nav-container {
     background-color: $dark-background;
 
-    a {
-      color: $white;
+    #menu{
+      
+      a {
+        color: $white;
+      }
+  
+      li {
+        color: $white;
+      }
     }
-
-    li {
-      color: $white;
-    }
+    
   }
 
   .hamburger-bar {
@@ -69,8 +74,9 @@
     background-color: $white;
   }
 
-  #menu {
+  .menu {
     background-color: $black;
+    opacity: 1;
   }
 
   #create-btn {
@@ -79,5 +85,52 @@
 
   #create-btn:hover {
     background-image: url('../images/button-crear-gifo-modo-noc.svg');
+  }
+  .trending{
+    background-color: $trending-bg-dark;
+  }
+  #input-container{
+    border: 1px solid $white;
+  }
+  .search-btn{
+    display: none;
+  }
+  .search-btn-dark{
+    display: block;
+  }
+  .create-gif-btn{
+    border: 1px solid $white;
+    background-color: transparent;
+    &:hover{
+      background-color: $white;
+      .plus-sign{
+          background-color: $black;
+          &::after{
+              background-color: $black;
+          }
+      }
+    }
+    &:active{
+      background-color: $active-color;
+      .plus-sign{
+        background-color: $white;
+        &::after{
+          background-color: $white;
+        }
+      }
+    }
+    .plus-sign{
+      background-color: $white;
+      &::after{
+        background-color: $white;
+      }
+    }}
+}
+
+@include for-desktop{
+  .dark-mode{
+    .menu{
+      background-color: $dark-background;
+    }
   }
 }

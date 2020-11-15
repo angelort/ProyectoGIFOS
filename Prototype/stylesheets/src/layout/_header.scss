@@ -1,56 +1,107 @@
 header {
     margin-bottom: 91px;
     h1 {
-        margin: 0;
-        width: 286px;
-        height: 99px;
-        padding-left: 12%;
-        padding-right: 11.7%;
-        padding-bottom: 31px;
-        text-align: center;
-        font-size: 25px;
-        line-height: 33px;
-        font-weight: $bold;
-
-        span {
-            color: $secondarycolor;
-        }
+      margin: 0;
+      width: 286px;
+      height: 99px;
+      padding-left: 12%;
+      padding-right: 11.7%;
+      padding-bottom: 31px;
+      text-align: center;
+      font-size: 25px;
+      line-height: 33px;
+      font-weight: $bold;
+  br{
+      &:nth-child(2){
+          display: none;
+      }
+  }
+      span {
+        color: $secondarycolor;
+      }
     }
-
+  
     img {
-        width: 273px;
-        height: 130px;
-        display: block;
-        margin: auto;
+      width: 273px;
+      height: 130px;
+      display: block;
+      margin: auto;
     }
-
+  
     #input-container {
-        border: 1px solid $primarycolor;
-        width: 334px;
-        height: 50px;
+      border: 1px solid $primarycolor;
+      width: 334px;
+      height: 50px;
+      display: block;
+      margin: auto;
+      border-radius: 27px;
+  
+      input {
         display: block;
-        margin: auto;
-        border-radius: 27px;
-
-        input {
-            display: block;
-            margin: 0 55px;
-            border: 0;
-            height: 50px;
-            font-weight: $regular;
-            justify-self: start;
-        }
+        margin: 0 0 0 10%;
+        border: 0;
+        height: 50px;
+        font-weight: $regular;
+        justify-self: start;
+        color: $active-color;
+      }
     }
-
+  
     .trending-list {
-        padding-top: 31px;
-        text-align: center;
-        p{
-            font-family: $font-montserrat;
-            font-weight: $medium;
-            font-size: 14px;
-            line-height: 25px;
-            padding: 0 20%;
-        }
+      padding-top: 31px;
+      text-align: center;
+      line-height: 25px;
+      p {
+        font-family: $font-montserrat;
+        font-weight: $medium;
+        font-size: 14px;
+        line-height: 25px;
+        padding: 0 20%;
+        text-transform: capitalize;
+      }
     }
-}
+  }
+  
+  @include for-desktop {
+    header {
+      margin-bottom: 162px;
+      h1 {
+        font-size: 35px;
+        color: $primarycolor;
+        line-height: 50px;
+        margin: 0;
+        width: auto;
+        height: 100px;
+        padding: 0;
+        padding-bottom: 1.6%;
+        text-align: center;
+        br{
+            display: none;
+            &:nth-child(2){
+              display: block;
+          }
+        }
+      }
+  
+      img {
+        width: 399px;
+        height: 190px;
+      }
+  
+      #input-container {
+        width: 38.3%;
+        input {
+          margin: 0 0 0 6%;
+        }
+      }
+  
+      .trending-list {
+          font-size: 18px;
+            p {
+            font-size: 16px;
+            padding: 0 20%;
+            }
+      }
+    }
+  }
+  

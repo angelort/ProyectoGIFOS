@@ -9,6 +9,9 @@ $font-roboto:'Roboto', sans-serif;
 $regular:400;
 $medium:500;
 $bold:700;
+$fw-black:900;
+$trending-bg: #F3F5F8;
+$trending-bg-dark: #222326;
 
 @mixin icon-bg($path) {
   background-image: url($path);

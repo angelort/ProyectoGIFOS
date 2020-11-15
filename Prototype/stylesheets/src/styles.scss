@@ -29,6 +29,9 @@ body {
 // Mixin desktop
 @import "abstracts/mixins";
 
+// Estilos para hover y active de botones
+@import "components/button";
+
 // Componentes de caja de búsqueda
 @import "components/box";
 @import "components/search_box";

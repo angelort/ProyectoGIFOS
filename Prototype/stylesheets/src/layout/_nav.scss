@@ -52,7 +52,7 @@
     li {
       line-height: 60px;
       font-size: 15px;
-      
+
       &:first-child {
         padding-top: 17px;
       }
@@ -78,6 +78,15 @@
     justify-content: space-between;
     height: 95px;
     align-items: center;
+    .logo-text{
+      position: absolute;
+      padding-left: 7%;
+      padding-top: 2.7%;
+      z-index: 4;
+      font-family: $font-roboto;
+      font-weight: $fw-black;
+      line-height: 19px;
+    }
 
     .menu-btn {
       display: none;
@@ -106,10 +115,12 @@
       padding-left: 5.9%;
       height: 48.8px;
       width: 48.8px;
+      z-index: 4;
     }
 
     .logo-desktop {
       display: none;
+      z-index: 4;
     }
   }
 }
@@ -129,17 +140,12 @@
       height: auto;
       margin-top: 0;
       top: 2.4%;
-        text-transform: uppercase;
-        color: $primarycolor;
+      text-transform: uppercase;
+      color: $primarycolor;
 
       li {
-        a{
-          color: $primarycolor;
-
-        }
-        letter-spacing: 0;
         font-size: 13px;
-
+        line-height: auto;
         &:first-child {
           padding-top: 0px;
           margin-right: 3%;
@@ -151,13 +157,28 @@
 
         &:last-child {
           display: block;
-          border-radius: 100%;
-          height: 54px;
-          width: 54px;
-          border: 1px solid $primarycolor;
-          margin-right: 10.8%;
-          margin-left: 4.1%;
         }
+        &:hover{
+          // text-decoration-thickness soportada únicamente por Firefox, propiedad aún no definida
+          text-decoration: underline solid $secondarycolor;
+        }
+        &:active{
+          text-decoration: none;
+          color: $active-color;
+        }
+        a {
+          color: $primarycolor;
+        letter-spacing: 0;
+        font-size: 13px;
+          &:hover{
+            text-decoration: underline solid $secondarycolor;
+          }
+          &:active{
+            text-decoration: none;
+            color: $active-color;
+          }
+        }
+        
 
         .line {
           display: none;
@@ -167,6 +188,12 @@
 
     .nav-container {
       height: 90px;
+      .logo-text{
+        padding-left: 11.4%;
+        padding-top: 0.8%;
+        font-size: 18px;
+line-height: 21px;
+      }
 
       .logo-mobile {
         display: none;
