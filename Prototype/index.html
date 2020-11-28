@@ -80,31 +80,72 @@
         </section>
     </header>
     <main>
+        <section class="search">
+            <div class="search-line"></div>
+            <p class="search-term">Término de prueba</p>
+            <div class="search-results">
+                <div class="search-grid">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div>5</div>
+                    <div>6</div>
+                    <div>7</div>
+                    <div>8</div>
+                    <div>9</div>
+                    <div>0</div>
+                    <div>1</div>
+                    <div>2</div>
+                </div>
+                <!-- Botón 'Ver más' -->
+                <button class="view-more">
+                    VER MÁS
+                </button>
+            </div>
+            <div class="search-notfound">
+                <img src="/Prototype/img/icon-busqueda-sin-resultado.svg" alt="Búsqueda sin resultado" class="img-notresult" id="img-notresult">
+                <p class="notfound">Intenta con otra búsqueda.</p>
+            </div>
+        </section>
         <section class="favorites" id="favorites">
             <img src="./img/icon-favoritos.svg" alt="Favoritos">
             <h2 class="section-title">
                 Favoritos
             </h2>
+            <div class="favorites-items">
+               
+            </div>
+            <div class="favorites-empty">
+                <img src="./img/icon-fav-sin-contenido.svg" alt="Búsqueda sin resultado" class="img-notresult" id="img-notresult">
+                <p class="notfound">"¡Guarda tu primer GIFO en Favoritos <br> para que se muestre aquí!"</p>
+            </div>
         </section>
         <section class="mygifos" id="mygifos">
             <img src="./img/icon-mis-gifos.svg" alt="Mis GIFOS">
             <h2 class="section-title">
                 Mis GIFOS
             </h2>
+            <div class="mygifos-items">
+
+            </div>
+            <div class="mygifos-empty">
+                <img src="./img/icon-mis-gifos-sin-contenido.svg" alt="Búsqueda sin resultado" class="img-notresult" id="img-notresult">
+                <p class="notfound">¡Anímate a crear tu primer GIFO!</p>
+            </div>
         </section>
         <section class="trending" id="trending">
             <h2 class="section-title">
                 Trending GIFOS
             </h2>
             <p>
-                Mira los últimos<span></span>GIFOS de nuestra comunidad.
+                Mira los últimos <span></span>GIFOS de nuestra comunidad.
             </p>
         </section>
     </main>
     <footer>
         <div class="footer-flex">
-        <p class="share">
-Compartir en:</p>
+        <p class="share">Compartir en:</p>
         <div id="icons" class="icons">
             <a class="facebook" id="facebook" href="https://www.facebook.com/" target="_blank"
                 rel="noopener noreferrer"></a>

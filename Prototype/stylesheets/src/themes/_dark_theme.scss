@@ -10,7 +10,8 @@
   h6 {
     color: $white;
   }
-  p{
+
+  p {
     color: $white;
   }
 
@@ -28,23 +29,23 @@
 
   nav {
     background-color: $dark-background;
-    
+
   }
 
   #nav-container {
     background-color: $dark-background;
 
-    #menu{
-      
+    #menu {
+
       a {
         color: $white;
       }
-  
+
       li {
         color: $white;
       }
     }
-    
+
   }
 
   .hamburger-bar {
@@ -86,50 +87,73 @@
   #create-btn:hover {
     background-image: url('../images/button-crear-gifo-modo-noc.svg');
   }
-  .trending{
+
+  .trending {
     background-color: $trending-bg-dark;
   }
-  #input-container{
+
+  #input-container {
     border: 1px solid $white;
   }
-  .search-btn{
+
+  .search-btn {
     display: none;
   }
-  .search-btn-dark{
+
+  .search-btn-dark {
     display: block;
   }
-  .create-gif-btn{
+
+  .create-gif-btn {
     border: 1px solid $white;
     background-color: transparent;
-    &:hover{
+
+    &:hover {
       background-color: $white;
-      .plus-sign{
+
+      .plus-sign {
+        background-color: $black;
+
+        &::after {
           background-color: $black;
-          &::after{
-              background-color: $black;
-          }
+        }
       }
     }
-    &:active{
+
+    &:active {
       background-color: $active-color;
-      .plus-sign{
+
+      .plus-sign {
         background-color: $white;
-        &::after{
+
+        &::after {
           background-color: $white;
         }
       }
     }
-    .plus-sign{
+
+    .plus-sign {
       background-color: $white;
-      &::after{
+
+      &::after {
         background-color: $white;
       }
-    }}
+    }
+  }
+  .view-more {
+    color: $white;
+    border: 1px solid $white;
+    background-color: transparent;
+    &:hover {
+      background-color: $white;
+      color: $black;
+    }
+  }
 }
 
-@include for-desktop{
-  .dark-mode{
-    .menu{
+@include for-desktop {
+  .dark-mode {
+    .menu {
       background-color: $dark-background;
     }
   }

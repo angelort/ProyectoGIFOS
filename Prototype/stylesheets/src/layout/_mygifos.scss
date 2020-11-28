@@ -1,11 +1,21 @@
 .mygifos{
+    display: none;
     margin: 50px;
-    font-size: 20px;
     text-align: center;
     line-height: 30px;
     h2{
         font-family: $font-montserrat;
         font-weight: $bold;
         color: $primarycolor;
+        margin-bottom: 2.5%;
+        font-size: 20px;
+    }
+}
+
+@include for-desktop{
+    .mygifos{
+        h2{
+            font-size: 25px;
+        }
     }
 }

@@ -32,6 +32,9 @@ body {
 // Estilos para hover y active de botones
 @import "components/button";
 
+// Mensaje al no encontrar resultados en secciones Búsqueda, Favoritos y Mis GIFOS
+@import "components/notfound";
+
 // Componentes de caja de búsqueda
 @import "components/box";
 @import "components/search_box";
