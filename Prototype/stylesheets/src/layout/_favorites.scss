@@ -9,6 +9,9 @@
         color: $primarycolor;
         margin-bottom: 2.5%;
         font-size: 20px;
+        .favorites-empty{
+            display: none;
+        }
     }
 }
 

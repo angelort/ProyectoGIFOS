@@ -1,0 +1,94 @@
+.gifo-max {
+    width: 100%;
+    height: 584px;
+    overflow: hidden;
+    .gifo-max-card {
+      margin: 42% auto 183px;
+      border: 1px solid $black;
+      width: 84.8%;
+      height: 42%;
+      background-color: $white;
+    }
+    .card-btn {
+      width: 24px;
+      height: 24px;
+      border: none;
+      padding: 0;
+    }
+  
+    .close-max {
+      position: absolute;
+      margin-top: 11%;
+      margin-left: 80%;
+      @include icon-bg("/Prototype/img/close.svg"); 
+    }
+    .card-icons-max {
+      margin-top: -54%;
+      margin-left: 66%;
+      position: absolute;
+      display: flex;
+      gap: 38px;
+  
+      .favorite-max {
+        @include icon-bg("/Prototype/img/icon-fav-hover.svg");
+        &:active{
+          background-image: url("/Prototype/img/icon-fav-active.svg");
+        }
+      }
+      .download-max {
+        @include icon-bg("/Prototype/img/icon-download.svg");
+        opacity: 0.5;
+      }
+    }
+    .gif-info-max {
+      position: absolute;
+      margin-top: -55%;
+      flex-flow: column;
+      align-items: flex-start;
+      margin-left: 9%;
+      font-family: $font-roboto;
+      color: $black;
+      display: flex;
+      .user-max {
+        font-weight: $regular;
+        font-size: 15px;
+        margin-bottom: 6px;
+        line-height: 18px;
+      }
+      .gifo-title-max {
+        font-weight: $bold;
+        font-size: 16px;
+        line-height: 19px;
+      }
+    }
+  }
+  
+  @include for-desktop {
+    .gifo-max {
+      height: 100%;
+      .gifo-max-card {
+        margin: 160px auto 0;
+        width: 695px;
+        height: 385px;
+      }  
+      .close-max {
+        margin-top: 66px;
+      }
+      .card-icons-max {
+        margin-top: -2%;
+        margin-left: 68%;
+        gap: 30px;
+      }
+      .gif-info-max {
+        margin-top: -2%;
+        margin-left: 26%;
+      }
+      .carousel-btn-max{
+        justify-content: space-around;
+        position: relative;
+        top: -210px;
+        gap: 8%;
+      }
+    }
+  }
+  

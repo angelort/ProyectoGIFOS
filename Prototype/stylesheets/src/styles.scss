@@ -21,6 +21,8 @@ body {
         height: 5px;
         position: sticky;
         margin: 0;
+        top: 0;
+        bottom: 0;
         z-index: 3;
         border: 0;
     }
@@ -29,8 +31,17 @@ body {
 // Mixin desktop
 @import "abstracts/mixins";
 
-// Estilos para hover y active de botones
+// Estilos para hover y active de botón para crear GIF
 @import "components/button";
+
+// Estilos de cards para gifs
+@import "components/card";
+
+// Estilos para GIFO max size
+@import "components/gifo_max";
+
+// Estilos para botones de carrusel
+@import "components/carousel_button";
 
 // Mensaje al no encontrar resultados en secciones Búsqueda, Favoritos y Mis GIFOS
 @import "components/notfound";

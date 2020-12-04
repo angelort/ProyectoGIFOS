@@ -68,8 +68,8 @@ header {
 
 @include for-desktop {
   header {
-    margin-bottom: 95px;
-
+    position: relative;
+    margin-top: 12%;
     h1 {
       font-size: 35px;
       color: $primarycolor;

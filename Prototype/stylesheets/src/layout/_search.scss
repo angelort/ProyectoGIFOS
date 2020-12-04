@@ -1,8 +1,8 @@
 .search {
-    display: none;
+    display: block;
     text-align: center;
     .search-results {
-      display: none;
+      display: block;
     }
     .search-notfound {
       display: none;
@@ -29,7 +29,7 @@
       grid-template-rows: repeat(6, 120px);
       column-gap: 5.6%;
       row-gap: 25px;
-      div {
+      .card {
         border: 1px solid $black;
         width: 154px;
         height: 118px;
@@ -53,6 +53,7 @@
   
   @include for-desktop {
     .search {
+      margin-top: 8%;
       .search-line {
         width: 24%;
       }
@@ -69,7 +70,7 @@
         grid-template-rows: repeat(3, 200px);
         column-gap: 2%;
         row-gap: 30px;
-        div {
+        .card {
           width: 258px;
           height: 198px;
         }

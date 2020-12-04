@@ -95,6 +95,11 @@
   #input-container {
     border: 1px solid $white;
   }
+  .nav-container{
+    #input-container-nav {
+      border: 1px solid $white;
+    }
+  }
 
   .search-btn {
     display: none;
@@ -147,6 +152,20 @@
     &:hover {
       background-color: $white;
       color: $black;
+    }
+  }
+  .navbar{
+    #logo-link{
+      .logo-text{
+        color: $white;
+      }
+    }
+    .menu{
+      li{
+        a{
+          color: $white;
+        }
+      }
     }
   }
 }

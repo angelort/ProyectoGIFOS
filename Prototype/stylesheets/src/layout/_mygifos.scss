@@ -1,6 +1,6 @@
 .mygifos{
     display: none;
-    margin: 50px;
+    margin: 5px;
     text-align: center;
     line-height: 30px;
     h2{
@@ -9,6 +9,9 @@
         color: $primarycolor;
         margin-bottom: 2.5%;
         font-size: 20px;
+        .mygifos-empty{
+            display: none;
+        }
     }
 }
 

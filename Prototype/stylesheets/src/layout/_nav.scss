@@ -60,6 +60,9 @@
       &:last-child {
         display: none;
       }
+      a{
+        color: $white;
+      }
 
       .line {
         position: relative;
@@ -78,15 +81,6 @@
     justify-content: space-between;
     height: 95px;
     align-items: center;
-    .logo-text{
-      position: absolute;
-      padding-left: 7%;
-      padding-top: 2.7%;
-      z-index: 4;
-      font-family: $font-roboto;
-      font-weight: $fw-black;
-      line-height: 19px;
-    }
 
     .menu-btn {
       display: none;
@@ -110,23 +104,41 @@
         top: 0;
       }
     }
-
-    .logo-mobile {
-      padding-left: 5.9%;
-      height: 48.8px;
-      width: 48.8px;
-      z-index: 4;
-    }
-
-    .logo-desktop {
-      display: none;
-      z-index: 4;
+    #logo-link{
+      .logo-text {
+        color: $primarycolor; 
+        position: absolute;
+        padding-left: 7%;
+        padding-top: 5%;
+        z-index: 4;
+        font-family: $font-roboto;
+        font-weight: $fw-black;
+        line-height: 19px;
+      }
+      .logo-mobile {
+        margin-left: 45%;
+        height: 48.8px;
+        width: 48.8px;
+        z-index: 4;
+      }
+  
+      .logo-desktop {
+        display: none;
+        z-index: 4;
+      }
     }
   }
 }
 
 @include for-desktop {
   .navbar {
+    position: fixed;
+    top: 5px;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 95px;
+    z-index: 4;
+    background-color: $white;
     .menu-icon {
       .nav-icon {
         display: none;
@@ -188,23 +200,46 @@
 
     .nav-container {
       height: 90px;
-      .logo-text{
-        padding-left: 11.4%;
-        padding-top: 0.8%;
-        font-size: 18px;
-line-height: 21px;
-      }
-
-      .logo-mobile {
+      position: relative;
+      margin-top: 12px;
+      #input-container-nav{
         display: none;
+        position: absolute;
+        z-index: 5;
+        margin-left: 30%;
+        width: 23.2%;
+        margin-left: 23.8%;
+        transition: all 1s ease-in-out;
+        border: 1px solid $primarycolor;
+        border-radius: 27px;
+        .search-box{
+          margin-left: 15%;
+          border: none;
+          color: $active-color;
+        }
       }
-
-      .logo-desktop {
-        display: block;
-        padding-left: 10.8%;
-        width: 59.1px;
-        height: 59.1px;
+      #logo-link{
+        .logo-text {
+          margin-left: 4.5%;
+          padding-top: 1.7%;
+          font-size: 18px;
+          line-height: 21px;
+        }
+        .logo-mobile {
+          display: none;
+        }
+  
+        .logo-desktop {
+          position: relative;
+          display: block;
+          margin-left: 266%;
+          width: 59.1px;
+          height: 59.1px;
+        }
       }
     }
+  }
+  .sticky {
+    box-shadow: 0 2px 4px 1px rgba(156, 175, 195, 0.55);
   }
 }
