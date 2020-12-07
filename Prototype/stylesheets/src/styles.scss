@@ -3,6 +3,7 @@
 @import "vendors/_normalize.scss";
 @import"abstracts/variables";
 body {
+    transition: all 0.5s ease;
     a{
         text-decoration: none;
         color: $white;

@@ -1,4 +1,5 @@
 footer {
+  margin-top: 47px;
     font-family: $font-roboto;
     font-weight: $regular;
     letter-spacing: 0;
@@ -21,7 +22,7 @@ footer {
       a {
         width: 20px;
         height: 20px;
-        transition: all 0.3s ease-in-out;
+        transition: all 0.5s ease-in-out;
       }
       .facebook {
         @include icon-bg("/Prototype/img/icon_facebook.svg");

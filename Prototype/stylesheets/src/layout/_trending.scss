@@ -1,33 +1,70 @@
-.trending{
+.trending {
     margin-top: 123px;
     font-size: 20px;
     text-align: center;
     line-height: 30px;
     background-color: $trending-bg;
-    p{
-        margin-top: 3%;
-        font-family: $font-roboto;
-        font-weight: $regular;
-        line-height: 23px;
-        color: $black;
-        font-size: 16px;
-        text-align: center;
-        span{
-            display: block;
-        }
+    padding-top: 46px;
+    padding-bottom: 82px;
+    p {
+      margin-top: 3%;
+      font-family: $font-roboto;
+      font-weight: $regular;
+      line-height: 23px;
+      color: $black;
+      font-size: 16px;
+      text-align: center;
+      margin-bottom: 32px;
+      span {
+        display: block;
+      }
     }
-}
-
-@include for-desktop{
-    .trending{
-        margin-top: 6.5%;
-        font-size: 30px;
-        p{
-            margin-top: 1%;
-            font-size: 18px;
-            span{
-                display: none;
-            }
-        }
+    .trending-grid {
+      width: 200%;
+      justify-content: center;
+      margin: 0 6%;
+      display: flex;
+      flex-wrap: nowrap;
+      column-gap: 22px;
+      .card {
+        width: 241px;
+        height: 185px;
+      }
     }
-}
+  }
+  
+  @include for-desktop {
+    .trending {
+      margin-top: 6.5%;
+      font-size: 30px;
+      p {
+        margin-top: 1%;
+        font-size: 18px;
+        span {
+          display: none;
+        }
+      }
+      .trending-grid {
+        margin: 0;
+        column-gap: 2%;
+        width: 100%;
+        .card {
+          // Card visible para prueba
+          opacity: 1;
+          // Eliminar propiedad opacity
+          width: 357px;
+          height: 275px;
+        }
+        .gif-info{
+          margin-top: 40%;
+        }
+        .carousel-btn-trending{
+          justify-content: space-around;
+          position: relative;
+          align-items: center;
+          gap: 8%;
+        }
+      }
+    }
+  }
+  
