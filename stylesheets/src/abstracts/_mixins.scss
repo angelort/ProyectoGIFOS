@@ -1,0 +1,11 @@
+@mixin for-desktop {
+    @media (min-width: 1024px) {
+      @content;
+    }
+  }
+
+  @mixin icon-bg($path) {
+    background-image: url($path);
+    background-repeat: no-repeat;
+    background-position: center;
+  }

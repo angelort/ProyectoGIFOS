@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/logo.svg" type="image/x-icon" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="./stylesheets/dist/styles.min.css">
+    <title>gifOS</title>
+</head>
+
+<body class="index" id="index">
+    <!-- Barra de navegación con Logo y Menú -->
+    <hr>
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="#index" class="logo-link" id="logo-link">
+                <p class="logo-text" id="logo-text">GIFOS</p>
+                <img src="./img/logo-mobile.svg" alt="Logo mobile" class="logo-mobile" id="logo-mobile">
+                <img src="./img/logo-desktop.svg" alt="Logo desktop" class="logo-desktop" id="logo-desktop">
+            </a><input type="checkbox" class="menu-btn" id="menu-btn">
+            <label for="menu-btn" class="menu-icon" data-img="open">
+                <span class="nav-icon"></span>
+            </label>
+            <div id="input-container-nav" class="input-container">
+                <input autocomplete="off" type="search" name="search-box" class="search-box" id="search-box"
+                    placeholder="Busca GIFOS y más" required />
+                <button class="search-btn" id="search-btn "></button>
+                <button class="search-btn-dark" id="search-btn-dark"></button>
+            </div>
+            <ul id="menu" class="menu">
+                <li id="dark-toggle">
+                    <a href="#">Modo nocturno</a>
+                    <hr class="line">
+                </li>
+                <li>
+                    <a href="#">Favoritos</a>
+                    <hr class="line">
+                </li>
+                <li> <a href="#">Mis GIFOS</a>
+                    <hr class="line">
+                </li>
+                <li class="create-gif">
+                    <button class="create-gif-btn">
+                        <div class="plus-sign" id="plus-sign"></div>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Header con imagen, barra de búsqueda y trending list -->
+    <header>
+        <h1>
+            Inspírate, busca,
+            <br> guarda, y crea
+            <br>
+            los
+            <br> mejores <span>GIFOS</span>
+        </h1>
+        <img src="./img/ilustra_header.svg" alt="Ilustración Header" class="ilustra_header" id="ilustra_header">
+        <div id="input-container">
+            <input autocomplete="off" type="search" name="search-box" class="search-box" id="search-box"
+                placeholder="Busca GIFOS y más" required />
+            <button class="search-btn" id="search-btn"></button>
+            <button class="search-btn-dark" id="search-btn-dark"></button>
+            <ul id="suggestions ">
+                <li class="suggestion ">
+                    <div class="suggestion-text "></div>
+                </li>
+                <li class="suggestion ">
+                    <div class="suggestion-text "></div>
+                </li>
+                <li class="suggestion ">
+                    <div class="suggestion-text "></div>
+                </li>
+                <li class="suggestion ">
+                    <div class="suggestion-text "></div>
+                </li>
+            </ul>
+        </div>
+        <section class="trending-list">
+            <h3>Trending:</h3>
+            <p id="trending-list" class="colored-text"></p>
+        </section>
+    </header>
+    <main>
+        <section class="search">
+            <div class="search-line"></div>
+            <p class="search-term">Término de prueba</p>
+            <div class="search-results">
+                <div class="search-grid">
+                    <div class="card" id="card">
+                        <div class="card-icons">
+                            <button id="favorite-btn" class="favorite-btn card-btn"></button>
+                            <button class="download-btn card-btn" id="download-btn"></button>
+                            <button class="gif-max-size card-btn" id="gif-max-size"></button>
+                        </div>
+                        <div class="gif-info" id="gif-info">
+                            <h3 class="user" id="user">User</h3>
+                            <h2 class="gifo-title" id="gifo-title">Título GIFO</h2>
+                        </div>
+                    </div>
+                    <div class="card" id="card">2</div>
+                    <div class="card" id="card">3</div>
+                    <div class="card" id="card">4</div>
+                    <div class="card" id="card">5</div>
+                    <div class="card" id="card">6</div>
+                    <div class="card" id="card">7</div>
+                    <div class="card" id="card">8</div>
+                    <div class="card" id="card">9</div>
+                    <div class="card" id="card">0</div>
+                    <div class="card" id="card">1</div>
+                    <div class="card" id="card">2</div>
+                </div>
+                <!-- Botón 'Ver más' -->
+                <button class="view-more">
+                    VER MÁS
+                </button>
+            </div>
+            <div class="search-notfound">
+                <img src="./img/icon-busqueda-sin-resultado.svg" alt="Búsqueda sin resultado"
+                    class="img-notresult" id="img-notresult">
+                <p class="notfound">Intenta con otra búsqueda.</p>
+            </div>
+        </section>
+        <section class="favorites" id="favorites">
+            <img src="./img/icon-favoritos.svg" alt="Favoritos">
+            <h2 class="section-title">
+                Favoritos
+            </h2>
+            <div class="favorites-items">
+
+            </div>
+            <div class="favorites-empty">
+                <img src="./img/icon-fav-sin-contenido.svg" alt="Búsqueda sin resultado" class="img-notresult"
+                    id="img-notresult">
+                <p class="notfound">"¡Guarda tu primer GIFO en Favoritos <br> para que se muestre aquí!"</p>
+            </div>
+        </section>
+        <section class="mygifos" id="mygifos">
+            <img src="./img/icon-mis-gifos.svg" alt="Mis GIFOS">
+            <h2 class="section-title">
+                Mis GIFOS
+            </h2>
+            <div class="mygifos-items">
+
+            </div>
+            <div class="mygifos-empty">
+                <img src="./img/icon-mis-gifos-sin-contenido.svg" alt="Búsqueda sin resultado" class="img-notresult"
+                    id="img-notresult">
+                <p class="notfound">¡Anímate a crear tu primer GIFO!</p>
+            </div>
+        </section>
+        <section class="trending" id="trending">
+            <h2 class="section-title">
+                Trending GIFOS
+            </h2>
+            <p>
+                Mira los últimos <span></span>GIFO de nuestra comunidad.
+            </p>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-flex">
+            <p class="share">Compartir en:</p>
+            <div id="icons" class="icons">
+                <a class="facebook" id="facebook" href="https://www.facebook.com/" target="_blank"
+                    rel="noopener noreferrer"></a>
+                <a class="twitter" id="twitter" href="https://www.twitter.com/" target="_blank"
+                    rel="noopener noreferrer"></a>
+                <a class="instagram" id="instagram" href="https://www.instagram.com/" target="_blank"
+                    rel="noopener noreferrer"></a>
+            </div>
+        </div>
+        <p class="copyright">&copy; GIFOS 2020 All Rights Reserved.</p>
+    </footer>
+    <hr>
+    <script src="/js/darkMode.js"></script>
+    <script src="/js/trendingTerms.js"></script>
+    <script src="/js/stickyNavbar.js"></script>
+</body>
+
+</html>
